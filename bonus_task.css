@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+    display: inline-block;
+    width: calc(100%/8);
+    height: 300px;
+    padding: 130px 0;
+    margin: 0 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size:30px ;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.one, .three,.five ,.seven{
+    background: #fff;
+    color: #000;
+}
+.two, .four,.six ,.eight{
+    background: #000;
+    color: #fff;
+}
+.one:hover , .three:hover{
+    background: #000;
+    color: #fff;
+}
+.one:hover ~ .three{
+    background: #000;
+    color: #fff;
+}
+.five:hover ~ .six{
+    background: #fff;
+    color: #000;
+}
+.five:hover ~ .eight{
+    background: #fff;
+    color: #000;
+}
+
+
+

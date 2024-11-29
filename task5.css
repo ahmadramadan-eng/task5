@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+    display: inline-block;
+    width: calc(100%/8);
+    height: 300px;
+    padding: 130px 0;
+    margin: 0 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size:30px ;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.one, .three,.five ,.seven{
+    background: #000;
+    color: #fff;
+}
+.one:hover ,.three:hover ,.five:hover ,.seven:hover{
+    background: #fff;
+    color: #000;
+}
+.two, .four,.six ,.eight{
+    background: #fff;
+    color: #000;
+}
+.two:hover ,.four:hover ,.six:hover ,.eight:hover{
+    background: #000;
+    color: #fff;
+}
+.table{
+    width: 100%;
+    background: linear-gradient(to right, blue, rgb(255, 5, 255));
+    text-align: left;
+    padding-top: 40px;
+    
+}
+.table table{
+    width: 60%;
+    margin-left:20% ;
+    box-shadow: 0px 0px 10px 0px rgb(99, 99, 99);
+    padding:0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background: rgb(255, 102, 0);
+
+}
+
+.table tbody tr{
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-top: 0 solid transparent;
+    transition: 1s ease;
+}
+
+.table tbody tr:hover{
+    background: #3434343b;
+}
+th ,td{
+    padding-left:15px ;
+    padding-top:10px ;
+    padding-bottom:10px ;
+}
+.images{
+    width: 100%;
+    height: 600px;
+    padding-top:20px ;
+    position: relative;
+}
+img{
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    transition: 0.7s ease;
+}
+.gray{
+    position: absolute;
+    right: 407px;
+
+}
+.gray:hover{
+    border-radius: 50%;
+    filter:grayscale(100%);
+}
+.blur{
+    position:absolute;
+    left: 407px;
+}
+.blur:hover{
+    filter: blur(5px);
+    border-radius: 50%;
+}
+.old{
+    position: absolute;
+    top : 275px;
+    right: 407px;
+}
+.old:hover{
+    border-radius: 50%;
+    filter: sepia(100%);
+}
+
+.invert{
+    position: absolute;
+    left: 407px;
+    top: 275px;
+}
+.invert:hover{
+    border-radius: 50%;
+    filter:invert(100%);
+}
+.paragraph{
+    width: 100%;
+    height: 350px;
+    padding: 0px 80px;
+    text-align: justify;
+    font-size:25px ;
+    font-weight: 600;
+}
+.paragraph p{
+    margin:0px 10px; 
+}
+.paragraph p::selection{
+    background: #000;
+    color: #fff;
+}
